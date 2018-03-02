@@ -1,2 +1,2 @@
-# wechatsPc-export-contacts-extension
-wechatsPc-export-contacts-extension
+# whatsAppPc-export-contacts-extension
+whatsAppPc-export-contacts-extension

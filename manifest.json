@@ -1,0 +1,44 @@
+{
+    "name": "whatsAppPc-export-contacts-extension",
+    "description" : "whatsAppPc-export-contacts-extension",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "icons": {
+        "128": "images/export.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/whatsapp.png",
+            "38": "images/whatsapp-active.png"
+        },
+        "default_title": "export contacts from whatsAppPc",
+        "default_popup": "src/export.html"
+    },
+    "options_page": "settings.html",
+    "content_scripts":[
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["src/core_injection.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+              "https://web.whatsapp.com/*"
+            ],
+            "js": [
+              "src/addExportBtn.js",
+              "src/lib/drop/drop.js",
+              "src/lib/sweetalert/sweetalert.min.js"
+            ],
+            "css": [
+              "src/addExportBtn.css",
+              "src/lib/drop/css/drop-theme-basic.css",
+              "src/lib/sweetalert/sweetalert.css"
+            ]
+          }
+    ],
+    "web_accessible_resources": [
+        "src/*",
+        "images/*"
+    ]
+}

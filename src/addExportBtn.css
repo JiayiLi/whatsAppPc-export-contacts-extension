@@ -1,0 +1,9 @@
+.export_contact_btn {
+    width: 24px;
+    height: 24px;
+    background-image: url(chrome-extension://nbhgcmdkfpefoaogajakpidcgllgeeem/images/incognito_gray.svg);
+    background-size: 21px 21px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 1px 1px !important;
+}
