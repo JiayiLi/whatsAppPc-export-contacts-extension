@@ -1,7 +1,15 @@
 inject();
 async function inject() 
-{
+{	
+	await addScript('src/BinaryReader.js');
+	await addScript('src/wapacket.js');
+	await addScript('src/crypto.js');	
+	await addScript('src/NodeParser.js');
+	await addScript('src/NodeParser.js');
 	await addScript('src/WebScoketInterception.js');
+	await addScript('src/lib/jquery.js');
+	await addScript('src/addExportBtn.js');
+	
 }
 
 function addScript(scriptName) {
@@ -15,3 +23,4 @@ function addScript(scriptName) {
 		(document.head||document.documentElement).appendChild(s);
 	});
 }
+

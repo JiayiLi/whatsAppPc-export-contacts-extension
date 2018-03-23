@@ -26,7 +26,6 @@
               "https://web.whatsapp.com/*"
             ],
             "js": [
-              "src/addExportBtn.js",
               "src/lib/drop/drop.js",
               "src/lib/sweetalert/sweetalert.min.js"
             ],
